@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" tools:context=".GeneratedCode"
+    android:background="@drawable/ipw_background">
+
+    <TextView
+        android:id="@+id/greeting_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/greeting_1"
+        android:text="Introduceti datele pentru a putea genera codul QR"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/firstname_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First name:  "
+        android:layout_below="@id/greeting_3"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/firstname_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/firstname_view"
+        android:layout_alignBaseline="@id/firstname_view"
+        android:inputType="textCapSentences"/>
+
+    <TextView
+        android:id="@+id/lastname_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last name: "
+        android:layout_below="@id/firstname_view"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/lastname_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lastname_view"
+        android:layout_toRightOf="@id/lastname_view"
+        android:inputType="textCapSentences"/>
+
+    <TextView
+        android:id="@+id/age_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: "
+        android:layout_below="@id/lastname_view"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/age_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/age_view"
+        android:layout_toRightOf="@id/age_view"
+        android:inputType="number"/>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:id="@+id/take_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take photo"
+        android:layout_below="@id/age_view"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/choose_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/take_btn"
+        android:layout_alignParentRight="true"
+        android:text="Choose photo"/>
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/take_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/generate_btn"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Generate"/>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
