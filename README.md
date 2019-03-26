@@ -1,5 +1,5 @@
 # beer-me
-Aplicatie realizata in cadrul IPWorkshop; autor Vlad Pelin.
+Aplicatie realizata in cadrul IPWorkshop.
 
 -----
 
